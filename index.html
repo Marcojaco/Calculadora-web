@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Calculater</title>
+</head>
+<body>
+    <header id="cabeca">
+        <h1 id="titulo">
+            calcule agora
+        </h1>
+    </header>
+
+    <main id="corpo">
+            <div id="form">
+                <div id="campoTexto">
+                    <div id="primeiro" class="inputs-label">
+                        <label for="primeiroN">Coloque o primeiro número aqui:</label>
+                        <input type="text" name="number1" id="primeiroN" class="campo-input">
+                    </div>
+                    
+                    <div id="segundo" class="inputs-label">
+                        <label for="segundoN">Coloque o segundo número aqui:</label>
+                        <input type="text" name="number2" id="segundoN" class="campo-input">
+                    </div>
+                </div>
+
+                <div id="selecaoOperacao">
+                    <select name="Operação" id="selecao">
+                        <option value="+">SOMAR</option>
+                        <option value="-">SUBTRAÇÃO</option>
+                        <option value="*">MULTIPLICAÇÃO</option>
+                        <option value="/">DIVISÃO</option>
+                    </select>
+                </div>
+
+                <button id="resultado">=</button>
+            </div>
+
+            <div id="popup" class="popup">
+                <h5>O RESULTADO É:</h5>
+                <div id="numResultado">
+                    <span id="popupText"></span>
+                </div>
+                <button onclick="fecharPopup()" id="botaoFecharPop">X</button>
+            </div>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>
