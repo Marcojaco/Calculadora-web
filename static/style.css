@@ -147,7 +147,7 @@ select:focus {
     background: #222;
     color: white;
     border-radius: 10px;
-    display: block;
+    display: none;
 
     align-items: center;
     text-align: center;
